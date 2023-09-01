@@ -130,8 +130,8 @@ if (empty($payment)) {
           <div class="mb-3 row">
             <label for="kaiinn" class="col-sm-2 col-form-label">会員証</label>
             <div class="col-sm-10">
-              <input type="text" name="kaiinn" readonly class="form-control-plaintext" id="kaiinn" value="<?php echo $_POST{
-                                                                                                            'kaiinn'} ?>">
+              <input type="text" name="kaiinn" readonly class="form-control-plaintext" id="kaiinn" value="<?php echo $_POST[
+                                                                                                            'kaiinn'] ?>">
             </div>
           </div>
           <div class="mb-3 row">
