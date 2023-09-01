@@ -129,9 +129,12 @@ $mysqli->close();
         <tbody>
           <?php foreach ($rows as $row) { ?>
             <tr>
-              <td><?php echo htmlspecialchars($row['ID']); ?></td>
+              <td><?php echo htmlspecialchars($row['id']); ?></td>
               <td><?php echo htmlspecialchars($row['created_at']); ?></td>
-              <td><?php echo htmlspecialchars("{$row['namae1']}{$row['namae2']}{$row['namae3']}{$row['namae4']}") ?></td>
+              <td>
+                  <?php echo htmlspecialchars("{$row['namae1']} {$row['namae2']}"); ?>
+                  <br>
+                  <?php echo htmlspecialchars("{$row['namae3']} {$row['namae4']}"); ?>
               <td><?php echo htmlspecialchars($row['eiga']); ?></td>
               <td><?php echo htmlspecialchars($row['time']); ?></td>
               <td><?php echo htmlspecialchars($row['payment']); ?></td>
